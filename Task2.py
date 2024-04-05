@@ -8,7 +8,7 @@ print(df.head())
 
 # Step 3: Filtering data based on conditions
 # Example: Filter rows where a certain column meets a condition
-filtered_df = df[df['ChipRate'] > 10]
+filtered_df = df[df['ChipLevel4'] > 10]
 
 # Step 4: Handling missing values
 # Check for missing values
@@ -21,10 +21,10 @@ df_filled = df.fillna(0)  # Replace NaNs with 0
 df_dropped = df.dropna()
 
 # Step 5: Calculating summary statistics
-mean_value = df['ChipRate'].mean()
-median_value = df['ChipRate'].median()
-min_value = df['ChipRate'].min()
-max_value = df['ChipRate'].max()
+mean_value = df['ChipLevel4'].mean()
+median_value = df['ChipLevel4'].median()
+min_value = df['ChipLevel4'].min()
+max_value = df['ChipLevel4'].max()
 
 # Step 6: View summary statistics for the DataFrame
 print(df.describe())
